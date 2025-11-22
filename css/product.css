@@ -1,0 +1,74 @@
+ /* Hover effect */
+  .card {
+    transition: transform .3s ease, box-shadow .3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  }
+
+  /* Fade-out animation for filter */
+  .fade-out {
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  /* CTA brand color */
+  .btn-brand {
+    background-color: #ff7a00;
+    border-color: #ff7a00;
+    color: #fff;
+  }
+  .btn-brand:hover {
+    background-color: #e86a00;
+    border-color: #e86a00;
+  }
+
+  /* Make buttons wrap and spaced nicely */
+.filter-btns {
+  display: flex;
+  flex-wrap: wrap;          /* allow wrapping on small screens */
+  gap: 10px;                /* consistent spacing between buttons */
+  justify-content: center;  /* center buttons horizontally */
+  margin-bottom: 20px;      /* space below the button group */
+  padding: 0 10px;          /* side padding on mobile */
+}
+
+/* Style individual buttons */
+.filter-btns .btn {
+  flex: 1 1 auto;           /* allow buttons to grow/shrink */
+  min-width: 120px;         /* prevents shrinking too much */
+  padding: 10px 15px;       /* bigger tap area for mobile */
+  font-size: 14px;           /* readable text */
+  text-align: center;
+  border-radius: 50px;       /* pill-shaped look */
+  transition: all 0.3s ease;
+}
+
+/* Active button */
+.filter-btns .active {
+  background-color: #ff7a00;
+  color: #fff;
+  border-color: #ff7a00;
+}
+
+/* Hover effect */
+.filter-btns .btn:hover {
+  background-color: #e86a00;
+  color: #fff;
+}
+
+/* Mobile-specific tweaks */
+@media (max-width: 576px) {
+  .filter-btns .btn {
+    flex: 1 1 100%;         /* full-width buttons on small screens */
+    font-size: 16px;        /* slightly bigger for readability */
+    margin-bottom: 10px;    /* extra space between stacked buttons */
+  }
+}
+
+
+  
